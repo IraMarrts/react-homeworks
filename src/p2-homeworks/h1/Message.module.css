@@ -1,3 +1,123 @@
-.message {
+.userImage {
+    display: inline-flex;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 80px;
+    margin-right: 16px;
+    margin-bottom: -6px;
+}
 
+.speechBubble {
+    display: inline-block;
+    position: relative;
+}
+
+.speechBubble>div {
+    background: #dcf8c6;
+    border-radius: 0.4em;
+    display: inline-block;
+    padding: 5px;
+    z-index: 1;
+}
+
+.speechBubble::after {
+    background-color:#6a57c4;
+    border-radius: 0 0 40% 0;
+    border-left: 0;
+    bottom: 12px;
+    content: '';
+    height: 60px;
+    margin-top: -7px;
+    margin-left: -5px;
+    position: absolute;
+    left: -11px;
+    transform: rotate(10deg);
+    width: 60px;
+    z-index: -1;
+}
+
+.speechBubble::before {
+    background-color: #dcf8c6;
+    border-radius: 50%;
+    border-left: 0;
+    bottom: 1px;
+    content: '';
+    height: 60px;
+    margin-top: -10px;
+    margin-left: -5px;
+    position: absolute;
+    left: -11px;
+    transform: rotate(15deg);
+    width: 60px;
+    z-index: -1;
+}
+
+p {
+    margin: auto;
+}
+
+.name {
+    color: violet;
+    font-size: 20px;
+}
+
+.message {
+    color: green;
+    font-size: 16px;
+}
+
+.time {
+    color: black;
+    font-size: 8px;
+    text-align: right;
+}
+
+
+/*--------------*/
+.messageIgnat {
+    display: flex;
+    /*-чтобы аватар всегда был внизу на одной лини-*/
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.avatarIgnat {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.content {
+    padding: 10px;
+    /* закругляем 3 уголка для пузырька*/
+    border-radius: 5px 5px 0 5px;
+    /* полупрозрачный фон 0.3*/
+    background-color: rgba(255,255,255,0.3);
+}
+.angle {
+    width:15px;
+    height: 15px;
+    /*создаём кружок радиусом 15px в 0,0 (верхний правый угол) градиентом резким переходом (последний 0)
+    прозрачный на фоне цвета пузырька  */
+    background: radial-gradient(circle at top right, rgba(0,0,0,0) 15px, rgba(255,255,255,0.3) 0);
+}
+
+.textIgnat {
+    min-width: 150px;
+    max-width: 300px;
+    /* перенос слов на новую строку, если не вмещаются в контейнер*/
+    word-wrap: break-word;
+}
+
+.nameIgnat {
+    color: #bbffbb;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.timeIgnat {
+    /*флекс для дивки и сдвигаем вниз */
+    display: flex;
+    justify-content: flex-end;
+    color: #bbffbb;
 }
