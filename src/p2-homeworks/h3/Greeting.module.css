@@ -1,7 +1,33 @@
-.someClass {
+.someClass, .error {
+    outline: none;
+    margin-right: 10px;
+}
 
+.someClass {
+    border: 1px solid greenyellow;
 }
 
 .error {
-    border: 1px solid red;
+    border: 3px solid red;
+}
+
+.errorWarning {
+    color: red;
+}
+
+.countUsers {
+    color: #e3aabf;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.addButton {
+    font-weight: bold;
+    color: #760404;
+    background: #e6ee61;
+}
+
+.addButton:disabled {
+    opacity: 0.5;
+
 }
