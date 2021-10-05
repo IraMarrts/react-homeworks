@@ -1,3 +1,6 @@
+App is available here:
+======================
+https://malinovaya0iriska.github.io/react-homeworks/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
