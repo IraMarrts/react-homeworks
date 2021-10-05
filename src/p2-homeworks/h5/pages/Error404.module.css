@@ -1,0 +1,9 @@
+.error {
+    display: flex;
+    justify-content: center;
+}
+
+.errorImg {
+    max-width: 100%;
+    min-height: 80vh;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+.editModeImg {
+    height: 35px;
+}
+
+.editModeImg:hover {
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+}
+.superSpan:hover{
+    color: #fcb008
+}
+
+.superSpan {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    line-height: 1.5;
+    color: #ba8101;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: -3px 0 3px rgb(80, 48, 4);
+}

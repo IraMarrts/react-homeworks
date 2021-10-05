@@ -1,0 +1,49 @@
+button {
+    cursor: pointer;
+}
+
+.list {
+    width: 60vh;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr;
+    margin: auto 10px;
+}
+
+.name {
+    color: #f1bc37;
+}
+
+.closeButton button {
+
+}
+
+.button {
+    margin: 20px 7px;
+    background: #9ceabd;
+    color: #1e5033;
+}
+
+.button:focus {
+    outline: 1px solid #1e5033;
+}
+
+.active {
+    background: #1e5033;
+    color: #9ceabd;
+}
+
+.priority {
+    font-size: 0.8em;
+}
+
+.high {
+    color: #fe0682;
+}
+
+.middle {
+    color: #f1e505;
+}
+
+.low {
+    color: #9ceabd;
+}
