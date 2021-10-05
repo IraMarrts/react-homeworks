@@ -1,12 +1,52 @@
-.superInput {
+.wrapper {
+    display: flex;
+    align-items: center;
+}
 
+.inputCommon {
+    font-size: 1em;
+    padding: 4px;
+    box-sizing: content-box;
+    display: inline-block;
+    border-radius: 9999em;
+    margin: 7px 0;
+}
+
+.inputCommon:focus {
+    outline: none;
+}
+
+.errorInput:focus {
+    box-shadow: inset 0 0 0 3px #fe0682,
+    0 0 0 1px #fe0682,
+    3px -3px 30px #61001a,
+    -3px 3px 30px #ff0082;
+}
+
+.superInput:focus {
+    box-shadow: inset 0 0 0 3px #c2dece,
+    0 0 0 1px #b7e4ca,
+    3px -3px 30px #1beabd,
+    -3px 3px 30px #9ceabd;
+}
+
+.superInput {
+    background: linear-gradient(21deg, #1beabd, #5ea97d);
+    border: 1px solid #5ea97d;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    background: linear-gradient(21deg, #61001a, #ff0082);
+    border: 1px solid red;
+}
+
+.spanText {
+    box-sizing: content-box;
+    display: inline-block;
 }
 
 .error {
     color: red;
+    padding-left: 10px;
 }
+

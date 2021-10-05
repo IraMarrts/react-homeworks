@@ -1,7 +1,104 @@
+.red {
+    background: linear-gradient(to bottom, #f594c5 11%, #f083a5 39%, #e289e9 100%, #e86770 100%);
+}
 .default {
-
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    text-shadow: 0 -2px 0 #4a8a65, 0 1px 1px #c2dece;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #5ea97d;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 15px;
+    display: inline-block;
+    width: auto;
+    background: linear-gradient(to bottom, #9ceabd 0%, #9ddab6 26%, #7fbb98 100%);
+    border-radius: 75px;
+    border-top: 1px solid #c8e2d3;
+    border-bottom: 1px solid #c2dece;
+    top: 0;
+    transition: all 0.06s ease-out;
+    position: relative;
+}
+.default:visited {
+    color: #a9f8c8;
 }
 
+.default:hover {
+    background: linear-gradient(to bottom, #baf1d1 0%, #b7e4ca 26%, #96c7ab 100%);
+}
+
+.default:active, .default:checked {
+    top: 6px;
+    text-shadow: 0 -2px 0 #7fbb98, 0 1px 1px #c2dece, 0 0 4px white;
+    color: white;
+}
+.default:active:before {
+    top: 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
+}
+
+.default:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 6px;
+    border-radius: 75px;
+    height: 25px;
+    background: linear-gradient(to top, #1e5033 0%, #378357 6px);
+    transition: all 0.078s ease-out;
+    box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2px rgba(0, 0, 0, 0.5), 0 10px 9px rgba(0, 0, 0, 0.2);
+}
+.default:disabled{
+    opacity: 0.7;
+}
 .red {
-    background: red;
+    background:linear-gradient(to bottom, #f594c5 11%, #f083a5 39%, #e289e9 100%, #e86770 100%);
+    color: #ab1b83;
+    text-shadow: 0 -2px 0 #803c9d, 0 1px 1px #dbc6f1;
+    border-top: 1px solid #f594c5;
+    border-bottom: 1px solid #e289e9;
+   }
+.red:visited {
+    color: #803c9d;
+}
+.red:hover {
+    background: linear-gradient(to bottom, #e3aabf 36%, #de7b9a 74%, #dd79bb 100%);
+    color: #dd32a2;
+}
+
+.red:active, .red:checked {
+    top: 6px;
+    text-shadow: 0 -2px 0 #803c9d, 0 1px 1px#dbc6f1, 0 0 4px white;
+    color: #e773bf;
+}
+.red:active, .red:before {
+    top: 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.88), 0 3px 9px rgba(0, 0, 0, 0.2);
+}
+
+.red:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 6px;
+    border-radius: 75px;
+    height: 25px;
+    background: linear-gradient(to top, #e431ed 0%,  #98019d 6px);
+    transition: all 0.078s ease-out;
+    box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2px rgba(0, 0, 0, 0.5), 0 10px 9px rgba(0, 0, 0, 0.2);
+}
+.red:disabled{
+    opacity: 0.7;
 }
