@@ -5,12 +5,14 @@ import {restoreState, saveState} from './localStorage/localStorage'
 
 function HW6() {
     const [value, setValue] = useState<string>('')
+    const error = value.trim() ? '' : 'Fill the form to save'
 
     const save = () => {
-        saveState<string>('editable-span-value', value)
+        !error && saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+        const savedValue = restoreState<string>('editable-span-value', '')
+        setValue(savedValue)
     }
 
     return (
@@ -24,6 +26,7 @@ function HW6() {
                     value={value}
                     onChangeText={setValue}
                     spanProps={{children: value ? undefined : 'enter text...'}}
+                    error={error}
                 />
             </div>
             <SuperButton onClick={save}>save</SuperButton>
