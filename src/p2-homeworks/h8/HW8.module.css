@@ -1,0 +1,8 @@
+.columns {
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: #e3b8e3;
+    font-weight: 500;
+}

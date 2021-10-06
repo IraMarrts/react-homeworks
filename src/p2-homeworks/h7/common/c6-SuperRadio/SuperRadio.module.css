@@ -1,0 +1,110 @@
+.customRadio {
+    width: 50%;
+    min-height: inherit;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    position: relative;
+}
+
+.customRadio::before,
+.customRadio::after {
+    content: "";
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+}
+
+label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin: 12px 0;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.radioInput {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.design {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #c7bebe;
+    border-radius: 100%;
+    margin-right: 16px;
+    position: relative;
+}
+
+.design::before,
+.design::after {
+    content: "";
+    display: block;
+
+    width: inherit;
+    height: inherit;
+
+    border-radius: inherit;
+
+    position: absolute;
+    transform: scale(0);
+    transform-origin: center center;
+}
+
+.design:before {
+    background: #fab404;
+    opacity: 0;
+    transition: .3s;
+}
+
+.design::after {
+    background: #fab404;
+    opacity: .4;
+    transition: .6s;
+}
+
+.text {
+    color: #c7bebe;
+    font-weight: bold;
+}
+
+
+/* checked state */
+.radioInput:checked + .design::before {
+    opacity: 1;
+    transform: scale(.6);
+}
+
+/* other states */
+.radioInput:hover + .design,
+.radioInput:focus + .design {
+    border: 1px solid #fab404;
+}
+
+.radioInput:hover + .design:before,
+.radioInput:focus + .design:before {
+    background: #fab404;
+}
+
+.radioInput:hover ~ .text {
+    color: #fab404;
+}
+
+.radioInput:checked ~ .text {
+    color: #fab404;
+}
+
+.radioInput:focus + .design::after,
+.radioInput:active + .design::after {
+    opacity: .1;
+    transform: scale(2.6);
+}
