@@ -1,0 +1,11 @@
+.time {
+    margin: 5px;
+    color: #f8f82a;
+    font-weight: bolder;
+}
+
+.date {
+    margin: 5px 5px 15px 5px;
+    color: #efa10d;
+    font-weight: bold;
+}
