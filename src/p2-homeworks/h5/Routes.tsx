@@ -3,6 +3,7 @@ import {Redirect, Route, Switch} from 'react-router-dom';
 import Error404 from "./pages/Error404";
 import PreJunior from "./pages/PreJunior";
 import Junior from "./pages/Junior";
+import JuniorPlus from "./pages/JuniorPlus";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -25,6 +26,7 @@ function Routes() {
 
                 <Route path={PATH.JUNIOR} render={() => <Junior/>}/>
 
+                <Route path={PATH.JUNIOR_PLUS} render={() => <JuniorPlus/>}/>
                 {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
                 <Route render={() => <Error404/>}/>
 

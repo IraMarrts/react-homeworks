@@ -10,6 +10,7 @@ type SuperRangePropsType = DefaultInputPropsType & { // и + ещё пропсы
     onChangeRange?: (value: number) => void
 };
 
+
 const SuperRange: React.FC<SuperRangePropsType> = (
     {
         type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
