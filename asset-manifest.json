@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react-homeworks/static/css/main.94f0d7eb.chunk.css",
-    "main.js": "/react-homeworks/static/js/main.aef70056.chunk.js",
-    "main.js.map": "/react-homeworks/static/js/main.aef70056.chunk.js.map",
+    "main.js": "/react-homeworks/static/js/main.cc8dde3e.chunk.js",
+    "main.js.map": "/react-homeworks/static/js/main.cc8dde3e.chunk.js.map",
     "runtime-main.js": "/react-homeworks/static/js/runtime-main.8ad1a092.js",
     "runtime-main.js.map": "/react-homeworks/static/js/runtime-main.8ad1a092.js.map",
     "static/css/2.ed590494.chunk.css": "/react-homeworks/static/css/2.ed590494.chunk.css",
-    "static/js/2.549c61b0.chunk.js": "/react-homeworks/static/js/2.549c61b0.chunk.js",
-    "static/js/2.549c61b0.chunk.js.map": "/react-homeworks/static/js/2.549c61b0.chunk.js.map",
+    "static/js/2.d5c67d1a.chunk.js": "/react-homeworks/static/js/2.d5c67d1a.chunk.js",
+    "static/js/2.d5c67d1a.chunk.js.map": "/react-homeworks/static/js/2.d5c67d1a.chunk.js.map",
     "index.html": "/react-homeworks/index.html",
-    "precache-manifest.48f8aad6870ced509d99f8b7be1d4172.js": "/react-homeworks/precache-manifest.48f8aad6870ced509d99f8b7be1d4172.js",
+    "precache-manifest.96b489e0a613de958305509aeca4e30d.js": "/react-homeworks/precache-manifest.96b489e0a613de958305509aeca4e30d.js",
     "service-worker.js": "/react-homeworks/service-worker.js",
     "static/css/2.ed590494.chunk.css.map": "/react-homeworks/static/css/2.ed590494.chunk.css.map",
     "static/css/main.94f0d7eb.chunk.css.map": "/react-homeworks/static/css/main.94f0d7eb.chunk.css.map",
-    "static/js/2.549c61b0.chunk.js.LICENSE.txt": "/react-homeworks/static/js/2.549c61b0.chunk.js.LICENSE.txt",
+    "static/js/2.d5c67d1a.chunk.js.LICENSE.txt": "/react-homeworks/static/js/2.d5c67d1a.chunk.js.LICENSE.txt",
     "static/media/error.gif": "/react-homeworks/static/media/error.eee6497e.gif",
     "static/media/feather.png": "/react-homeworks/static/media/feather.ddafe548.png",
     "static/media/project-deadline-progress-bar-animation.gif": "/react-homeworks/static/media/project-deadline-progress-bar-animation.0b3fdcac.gif"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.8ad1a092.js",
     "static/css/2.ed590494.chunk.css",
-    "static/js/2.549c61b0.chunk.js",
+    "static/js/2.d5c67d1a.chunk.js",
     "static/css/main.94f0d7eb.chunk.css",
-    "static/js/main.aef70056.chunk.js"
+    "static/js/main.cc8dde3e.chunk.js"
   ]
 }
